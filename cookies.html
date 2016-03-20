@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+	<title>Cookie</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="cookies.css">
+</head>
+<body>
+		<div id="main">
+			<div class="header"></div>
+			<div class="body">
+				<div id="cookieTable">
+				</div>
+				<div id="generateCookies">
+					Generate more cookies
+				</div>
+			</div>
+			<div class="footer">
+				<script type="text/javascript" src="cookies.js"></script>
+			</div>
+			<div id="templates" style="display: none">
+				<script id="rowTemplate" type="x-tmpl-html">
+					<div class="row">
+						<div class="col cookieName">
+						   {name}
+						</div>
+						<div class="col cookieValue">
+						   {value}
+						</div>
+						<div class="col deleteCookieButton" data-cookie-name="{name}">
+						   remove
+						</div>
+					</div>
+				</script>
+				<script id="headerRowTemplate" type="x-tmpl-html">
+					<div class="row">
+							<div class="col header-col">
+							   Cookie Name
+							</div>
+							<div class="col header-col">
+							   Cookie Value
+							</div>
+							<div class="col">
+							</div>
+						</div>
+				</script>
+			</div>
+		</div>
+</body>
